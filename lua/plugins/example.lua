@@ -132,6 +132,7 @@ return {
         "regex",
         "tsx",
         "typescript",
+        "rust",
         "vim",
         "yaml",
       },
@@ -185,6 +186,7 @@ return {
       ensure_installed = {
         "prettier",
         "stylua",
+        "rustfmt",
         "shellcheck",
         "shfmt",
         "flake8",

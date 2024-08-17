@@ -5,6 +5,7 @@ return {
   opts = function()
     local opts = {
       formatters_by_ft = {
+        rust = { "rustfmt" },
         lua = { "stylua" },
         python = { "black" },
         javascript = { "prettier" },
@@ -19,6 +20,10 @@ return {
         graphql = { "prettier" },
       },
       formatters = {
+        rustfmt = {
+          args = { "--emit=stdout" },
+          to_stdin = true,
+        },
         prettier = {
           single_quote = true,
           jsx_single_quote = true,
